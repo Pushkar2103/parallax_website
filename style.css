@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+    perspective: 10px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+    h1 {
+        font-size: 6rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #ffff;
+        text-shadow: .2rem .2rem .3rem black;
+        margin-top: -10rem;
+    }
+}
+
+#bgimg {
+    transform: translateZ(-40px) scale(5);
+}
+
+#fgimg {
+    transform: translateZ(-15px) scale(3);
+}
+
+#bgimg, #fgimg {
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+}
+
+.content {
+    background-color: black;
+    margin-top: 50vh;
+    width: 100%;
+    color: white;
+    font-size: 1.1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+    h1 {
+        padding: 3rem 0;
+        font-size: 4rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    div {
+        padding: 1rem;
+        padding-left: 4rem;
+        margin: 2rem 0;
+    }
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 100vw;
+    height: 35rem;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#text1 {
+    background-image: url(images/sport-1.jpg);
+}
+
+#text2 {
+    background-image: url(images/sport-2.jpg);
+}
+
+#text3 {
+    background-image: url(images/sport-3.jpg);
+}
